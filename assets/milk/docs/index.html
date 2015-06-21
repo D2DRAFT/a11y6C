@@ -7,240 +7,230 @@
 <meta name="viewport" content="width=1024">
 <title>siteTitle XXX</title>
 <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="http://example.comimages/common/favicon.ico">
-<link rel="stylesheet" href="http://example.comstyle.css">
+<link rel="stylesheet" href="/style.css">
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script src="http://example.comjs/application.js"></script>
-<style>
-#search {
- width: 318px;
- height: 30px;
-}
-.search-input {
- float: left;
- width: 270px;
- height: 28px;
- margin: 0 5px 0 0;
- padding: 0;
- border: solid 1px #e6e6e6;
-}
-.searchsubmit {
- float: left;
- width: 38px;
- height: 30px;
- margin: 0;
- padding: 0;
- color: #fff;
- text-align: center;
- background-color: #d33382;
- background-image: url('btn_search.png');
- border: none;
- cursor: pointer;
- overflow: hidden;
- text-indent: 100%;
- white-space: nowrap;
-}
-.submit {
- width: 272px;
- height: 61px;
- margin: 0;
- padding: 0;
- color: #fff;
- text-align: center;
- background-color: #d33382;
- background-image: url('btn_submit_m.png');
- border: none;
- cursor: pointer;
- overflow: hidden;
- text-indent: 100%;
- white-space: nowrap;
-}
-.submit:hover { opacity: 0.7; }
-</style>
+</head>
 <body>
-<h1>D2D</h1>
+<!-- .l-wrap -->
+<div class="l-wrap">
+<!-- .l-centering__bef -->
+<div class="l-centering__bef">
+<!-- .l-centering__aft -->
+<div class="l-centering__aft">
+
+
+<div class="row">
+<header>
+<h1><img src="images/sitelogo.png" alt=""></h1>
 <div class="mod_search">
-  <form action="" method="get" class="search-form">
-    <label for="s">
-      <input type="text" class="search-input" value=""  id="s" />
-      <input type="submit" class="searchsubmit" placeholder="検索キーワードを入力してください。" title="検索キーワードを入力してください。" value="検索" />
-    </label>
-  </form>
-  <!-- mod_search_end --></div>
-<h2>新規会員登録</h2>
-<div class="mod_form">
-  <form method="post" action="">
-    <h3>住所</h3>
-    <dl>
-      <dt>
-        <label for="postnum">郵便番号</label>
-        &nbsp;<span class="ex_essential">※</span></dt>
-      <dd>
-        <input type="text" id="postnum" value="" autofocus aria-required="true" title="前の3桁"/>
-        ー
-        <input type="text" value="" aria-required="true" title="後ろの4桁"/>
-      </dd>
-    </dl>
-    <dl>
-      <dt>
-        <label for="address01">都道府県</label>
-        &nbsp;<span class="ex_essential">※</span></dt>
-      <dd>
-        <select id="address01" aria-required="true">
-          <option value="" selected="selected">--選択してください--</option>
-          <optgroup label="北海道・東北">
-          <option value="北海道">北海道</option>
-          <option value="青森県">青森県</option>
-          <option value="秋田県">秋田県</option>
-          <option value="岩手県">岩手県</option>
-          <option value="山形県">山形県</option>
-          <option value="宮城県">宮城県</option>
-          <option value="福島県">福島県</option>
-          </optgroup>
-          <optgroup label="甲信越・北陸">
-          <option value="山梨県">山梨県</option>
-          <option value="長野県">長野県</option>
-          <option value="新潟県">新潟県</option>
-          <option value="富山県">富山県</option>
-          <option value="石川県">石川県</option>
-          <option value="福井県">福井県</option>
-          </optgroup>
-          <optgroup label="関東">
-          <option value="茨城県">茨城県</option>
-          <option value="栃木県">栃木県</option>
-          <option value="群馬県">群馬県</option>
-          <option value="埼玉県">埼玉県</option>
-          <option value="千葉県">千葉県</option>
-          <option value="東京都">東京都</option>
-          <option value="神奈川県">神奈川県</option>
-          </optgroup>
-          <optgroup label="東海">
-          <option value="愛知県">愛知県</option>
-          <option value="静岡県">静岡県</option>
-          <option value="岐阜県">岐阜県</option>
-          <option value="三重県">三重県</option>
-          </optgroup>
-          <optgroup label="関西">
-          <option value="大阪府">大阪府</option>
-          <option value="兵庫県">兵庫県</option>
-          <option value="京都府">京都府</option>
-          <option value="滋賀県">滋賀県</option>
-          <option value="奈良県">奈良県</option>
-          <option value="和歌山県">和歌山県</option>
-          </optgroup>
-          <optgroup label="中国">
-          <option value="岡山県">岡山県</option>
-          <option value="広島県">広島県</option>
-          <option value="鳥取県">鳥取県</option>
-          <option value="島根県">島根県</option>
-          <option value="山口県">山口県</option>
-          </optgroup>
-          <optgroup label="四国">
-          <option value="徳島県">徳島県</option>
-          <option value="香川県">香川県</option>
-          <option value="愛媛県">愛媛県</option>
-          <option value="高知県">高知県</option>
-          </optgroup>
-          <optgroup label="九州・沖縄">
-          <option value="福岡県">福岡県</option>
-          <option value="佐賀県">佐賀県</option>
-          <option value="長崎県">長崎県</option>
-          <option value="熊本県">熊本県</option>
-          <option value="大分県">大分県</option>
-          <option value="宮崎県">宮崎県</option>
-          <option value="鹿児島県">鹿児島県</option>
-          <option value="沖縄県">沖縄県</option>
-          </optgroup>
-        </select>
-      </dd>
-    </dl>
-    <dl>
-      <dt>
-        <label for="address02">市区町村</label>
-        &nbsp;<span class="ex_essential">※</span></dt>
-      <dd>
-        <input type="text" id="address01" value="" aria-required="true"/>
-      </dd>
-    </dl>
-    <dl>
-      <dt>
-        <label for="address03">番地・マンション名</label>
-        &nbsp;<span class="ex_essential">※</span></dt>
-      <dd>
-        <input type="text" id="address03" value="" aria-required="true"/>
-      </dd>
-    </dl>
-    <h3>お名前・性別</h3>
-    <dl>
-      <dt> 氏名
-        &nbsp;<span class="ex_essential">※</span></dt>
-      <dd>
-        <label for="name01">性</label>
-        <input type="text" id="name01"value="" aria-required="true"/>
-        <label for="name02">名</label>
-        <input type="text" id="name02"value="" aria-required="true"/>
-      </dd>
-    </dl>
-    <dl>
-      <dt id="kanalabel"> 氏名（ふりがな）
-        &nbsp;<span class="ex_essential">※</span></dt>
-      <dd>
-        <label for="kana01">性</label>
-        <input type="text" id="kana01"value="" aria-required="true"/>
-        <label for="kana02">名</label>
-        <input type="text" id="kana02"value="" aria-required="true"/>
-        <span aria-labelledby="kanalabel">ひらがなで入力してください。</span> </dd>
-    </dl>
-    <dl>
-      <dt id="character"> 性別
-        &nbsp;<span class="ex_essential">※</span></dt>
-      <dd>
-        <input type="radio" class="checkitem" value="男性" id="character_m" aria-describedby="character"/>
-        <label for="character_m">男性</label>
-        &nbsp;
-        <input type="radio" class="checkitem" value="女性" id="character_w"  aria-describedby="character"/>
-        <label for="character_w">女性</label>
-      </dd>
-    </dl>
-    <h3>連絡先</h3>
-    <dl>
-      <dt>
-        <label for="tel">電話番号</label>
-        &nbsp;<span class="ex_essential">※</span></dt>
-      <dd>
-        <input type="text" id="tel" value="" aria-required="true" title=""/>
-        -
-        <input type="text" value="" aria-required="true"  title=""/>
-        -
-        <input type="text" value="" aria-required="true" title="" />
-      </dd>
-    </dl>
-    <dl>
-      <dt>
-        <label for="mail">メールアドレス</label>
-        &nbsp;<span class="ex_essential">※</span></dt>
-      <dd>
-        <input type="text" id="mail" value="" aria-required="true"/>
-        メールアドレスは<br />
-        半角6文字以上で入力してください<br />
-        半角英数で入力してください。</dd>
-    </dl>
-    <dl>
-      <dt>
-        <label for="mail02">メールアドレス確認用</label>
-        &nbsp;<span class="ex_essential">※</span></dt>
-      <dd>
-        <input type="text" id="mail02"value="" aria-required="true"/>
-        確認のため再度入力してください</dd>
-    </dl>
-    <p>
-      <input type="checkbox" id="privacy" name="" value="利用規約及びポリシーに同意します。" />
-      利用規約及びポリシーに同意します。</p>
-    <div class="mod_form_btn">
-      <p>
-        <input type="submit" class="submit" value="確認する" />
-      </p>
-      <!--mod_form_btn_end--></div>
-  </form>
+<form action="" method="get" class="search-form">
+<label for="s">
+<input type="text" class="search-input" value="" name="s" id="s" />
+<input type="submit" class="searchsubmit" value="検索" />
+</label>
+</form>
 </div>
+<!-- mod_search_end -->
+</header>
+</div>
+
+<div class="row">
+<h2>新規会員登録<span class="text-small">※必須項目です。</span></h2>
+</div>
+
+<div class="mod_form">
+<form method="post" action="">
+<h3>住所</h3>
+<div class="mod_form_wrapper">
+<dl class="first">
+<dt>
+<label for="postnum">郵便番号</label>&nbsp;<span class="ex_essential">※</span></dt>
+<dd>
+<input type="text" id="postnum" value="" autofocus aria-required="true" title="前の3桁"/>
+ー
+<input type="text" value="" aria-required="true" title="後ろの4桁"/>
+</dd>
+</dl>
+<dl>
+<dt>
+<label for="address01">都道府県</label>
+&nbsp;<span class="ex_essential">※</span></dt>
+<dd>
+<select id="address01" aria-required="true">
+<option value="" selected="selected">--選択してください--</option>
+<optgroup label="北海道・東北">
+<option value="北海道">北海道</option>
+<option value="青森県">青森県</option>
+<option value="秋田県">秋田県</option>
+<option value="岩手県">岩手県</option>
+<option value="山形県">山形県</option>
+<option value="宮城県">宮城県</option>
+<option value="福島県">福島県</option>
+</optgroup>
+<optgroup label="甲信越・北陸">
+<option value="山梨県">山梨県</option>
+<option value="長野県">長野県</option>
+<option value="新潟県">新潟県</option>
+<option value="富山県">富山県</option>
+<option value="石川県">石川県</option>
+<option value="福井県">福井県</option>
+</optgroup>
+<optgroup label="関東">
+<option value="茨城県">茨城県</option>
+<option value="栃木県">栃木県</option>
+<option value="群馬県">群馬県</option>
+<option value="埼玉県">埼玉県</option>
+<option value="千葉県">千葉県</option>
+<option value="東京都">東京都</option>
+<option value="神奈川県">神奈川県</option>
+</optgroup>
+<optgroup label="東海">
+<option value="愛知県">愛知県</option>
+<option value="静岡県">静岡県</option>
+<option value="岐阜県">岐阜県</option>
+<option value="三重県">三重県</option>
+</optgroup>
+<optgroup label="関西">
+<option value="大阪府">大阪府</option>
+<option value="兵庫県">兵庫県</option>
+<option value="京都府">京都府</option>
+<option value="滋賀県">滋賀県</option>
+<option value="奈良県">奈良県</option>
+<option value="和歌山県">和歌山県</option>
+</optgroup>
+<optgroup label="中国">
+<option value="岡山県">岡山県</option>
+<option value="広島県">広島県</option>
+<option value="鳥取県">鳥取県</option>
+<option value="島根県">島根県</option>
+<option value="山口県">山口県</option>
+</optgroup>
+<optgroup label="四国">
+<option value="徳島県">徳島県</option>
+<option value="香川県">香川県</option>
+<option value="愛媛県">愛媛県</option>
+<option value="高知県">高知県</option>
+</optgroup>
+<optgroup label="九州・沖縄">
+<option value="福岡県">福岡県</option>
+<option value="佐賀県">佐賀県</option>
+<option value="長崎県">長崎県</option>
+<option value="熊本県">熊本県</option>
+<option value="大分県">大分県</option>
+<option value="宮崎県">宮崎県</option>
+<option value="鹿児島県">鹿児島県</option>
+<option value="沖縄県">沖縄県</option>
+</optgroup>
+</select>
+</dd>
+</dl>
+<dl>
+<dt>
+<label for="address02">市区町村</label>
+&nbsp;<span class="ex_essential">※</span></dt>
+<dd>
+<input type="text" id="address01" value="" aria-required="true"/>
+</dd>
+</dl>
+<dl class="last">
+<dt>
+<label for="address03">番地・マンション名</label>
+&nbsp;<span class="ex_essential">※</span></dt>
+<dd>
+<input type="text" id="address03" value="" aria-required="true"/>
+</dd>
+</dl>
+</div>
+
+
+<h3>お名前・性別</h3>
+
+<div class="mod_form_wrapper">
+<dl class="first">
+<dt> 氏名
+&nbsp;<span class="ex_essential">※</span></dt>
+<dd>
+<label for="name01">性</label>
+<input type="text" id="name01"value="" aria-required="true"/>
+<label for="name02">名</label>
+<input type="text" id="name02"value="" aria-required="true"/>
+</dd>
+
+</dl>
+<dl>
+<dt id="kanalabel"> 氏名（ふりがな）
+&nbsp;<span class="ex_essential">※</span></dt>
+<dd>
+<label for="kana01">性</label>
+<input type="text" id="kana01"value="" aria-required="true"/>
+<label for="kana02">名</label>
+<input type="text" id="kana02"value="" aria-required="true"/>
+<span aria-labelledby="kanalabel">ひらがなで入力してください。</span> </dd>
+</dl>
+<dl class="last">
+<dt id="character"> 性別
+&nbsp;<span class="ex_essential">※</span></dt>
+<dd>
+<input type="radio" class="checkitem" value="男性" id="character_m" aria-describedby="character"/>
+<label for="character_m">男性</label>
+&nbsp;
+<input type="radio" class="checkitem" value="女性" id="character_w"  aria-describedby="character"/>
+<label for="character_w">女性</label>
+</dd>
+</dl>
+</div>
+
+
+<h3>連絡先</h3>
+<div class="mod_form_wrapper">
+<dl class="first">
+<dt>
+<label for="tel">電話番号</label>&nbsp;<span class="ex_essential">※</span>
+</dt>
+<dd>
+<input type="text" id="tel" value="" aria-required="true" title=""/>
+-
+<input type="text" value="" aria-required="true"  title=""/>
+-
+<input type="text" value="" aria-required="true" title="" />
+</dd>
+</dl>
+<dl>
+<dt>
+<label for="mail">メールアドレス</label>&nbsp;<span class="ex_essential">※</span>
+</dt>
+<dd>
+<input type="text" id="mail" value="" aria-required="true"/>メールアドレスは<br />半角6文字以上で入力してください<br />半角英数で入力してください。
+</dd>
+</dl>
+<dl class="last">
+<dt><label for="mail02">メールアドレス確認用</label>&nbsp;<span class="ex_essential">※</span></dt>
+<dd>
+<input type="text" id="mail02"value="" aria-required="true"/>確認のため再度入力してください</dd>
+
+</dl>
+</div>
+
+<dl>
+<p><input type="checkbox" id="privacy" name="" value="利用規約及びポリシーに同意します。" />利用規約及びポリシーに同意します。</p>
+</dl>
+
+<div class="mod_form_btn">
+<p><input type="submit" class="submit" value="確認する" /></p>
+<!--mod_form_btn_end-->
+</div>
+
+</form>
+</div>
+
+
+</div>
+<!-- /.l-centering__aft -->
+</div>
+<!-- /.l-centering__bef -->
+</div>
+<!-- /.l-wrap -->
+
 </body>
 </html>
