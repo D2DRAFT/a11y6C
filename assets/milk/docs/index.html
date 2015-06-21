@@ -49,14 +49,34 @@
     white-space: nowrap;
   }
 
+    .submit {
+    width: 272px;
+    height: 61px;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    background-color: #d33382;
+    background-image: url('btn_submit_m.png');
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+  }
+  .submit:hover {
+    opacity: 0.7;
+  }
+
+
 </style>
   <body>
 <h1>D2D</h1>
 <div class="mod_search">
 <form action="" method="get" class="search-form">
 <label for="s">
-<input type="text" class="search-input" value="" name="s" id="s" />
-<input type="submit" class="searchsubmit" value="検索" />
+<input type="text" class="search-input" value=""  id="s" />
+<input type="submit" class="searchsubmit" placeholder="検索キーワードを入力してください。" title="検索キーワードを入力してください。" value="検索" />
 </label>
 </form>
 <!-- mod_search_end --></div>
@@ -66,8 +86,8 @@
 <form method="post" action="">
 <h3>住所</h3>
 <dl>
-<dt><label for="name">郵便番号</label>&nbsp;<span class="ex_essential">[必須]</span></dt>
-<dd><input type="text" id="name" name="name" placeholder="山田　太郎" value="" autofocus required /></dd>
+<dt><label for="postnum">郵便番号</label>&nbsp;<span class="ex_essential">※</span></dt>
+<dd><input type="text" id="postnum" value="" autofocus  /></dd>
 </dl>
 <dl>
 <dt><label for="name">都道府県</label>&nbsp;<span class="ex_essential">[必須]</span></dt>
@@ -114,7 +134,7 @@
 <p><input type="checkbox" id="privacy" name="" value="利用規約及びポリシーに同意します。" />利用規約及びポリシーに同意します。</p>
 
 <div class="mod_form_btn">
-<p><input type="submit" value="確認する"/></p>
+<p><input type="submit" class="submit" value="確認する" /></p>
 <!--mod_form_btn_end--></div>
 
 </form>
