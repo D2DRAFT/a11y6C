@@ -75,9 +75,9 @@
         <label for="postnum">郵便番号</label>
         &nbsp;<span class="ex_essential">※</span></dt>
       <dd>
-        <input type="text" id="postnum" value="" autofocus aria-required="true"/>
+        <input type="text" id="postnum" value="" autofocus aria-required="true" title="前の3桁"/>
         ー
-        <input type="text" value="" aria-required="true"/>
+        <input type="text" value="" aria-required="true" title="後ろの4桁"/>
       </dd>
     </dl>
     <dl>
@@ -158,40 +158,47 @@
         <label for="address02">市区町村</label>
         &nbsp;<span class="ex_essential">※</span></dt>
       <dd>
-        <input type="text" id="address01" value="" aria-‐‑‒required="true"/>
+        <input type="text" id="address01" value="" aria-required="true"/>
       </dd>
     </dl>
     <dl>
       <dt>
         <label for="address03">番地・マンション名</label>
-        &nbsp;<span class="ex_essential">[必須]</span></dt>
+        &nbsp;<span class="ex_essential">※</span></dt>
       <dd>
-        <input type="text" id="address03" value="" aria-‐‑‒required="true"/>
+        <input type="text" id="address03" value="" aria-required="true"/>
       </dd>
     </dl>
     <h3>お名前・性別</h3>
     <dl>
-      <dt>
-        <label for="name">氏名</label>
-        &nbsp;<span class="ex_essential">[必須]</span></dt>
+      <dt> 氏名
+        &nbsp;<span class="ex_essential">※</span></dt>
       <dd>
-        <input type="text" id="name" name="name" placeholder="山田　太郎" value="" autofocus required />
+        <label for="name01">性</label>
+        <input type="text" id="name01"value="" aria-required="true"/>
+        <label for="name02">名</label>
+        <input type="text" id="name02"value="" aria-required="true"/>
       </dd>
     </dl>
     <dl>
-      <dt>
-        <label for="name">氏名（ふりがな）</label>
-        &nbsp;<span class="ex_essential">[必須]</span></dt>
+      <dt id="kanalabel"> 氏名（ふりがな）
+        &nbsp;<span class="ex_essential">※</span></dt>
       <dd>
-        <input type="text" id="name" name="name" placeholder="山田　太郎" value="" autofocus required />
-      </dd>
+        <label for="kana01">性</label>
+        <input type="text" id="kana01"value="" aria-required="true"/>
+        <label for="kana02">名</label>
+        <input type="text" id="kana02"value="" aria-required="true"/>
+        <span aria-labelledby="kanalabel">ひらがなで入力してください。</span> </dd>
     </dl>
     <dl>
-      <dt>
-        <label for="name">性別</label>
-        &nbsp;<span class="ex_essential">[必須]</span></dt>
+      <dt id="character"> 性別
+        &nbsp;<span class="ex_essential">※</span></dt>
       <dd>
-        <input type="text" id="name" name="name" placeholder="山田　太郎" value="" autofocus required />
+        <input type="radio" class="checkitem" value="男性" id="character_m" aria-describedby="character"/>
+        <label for="character_m">男性</label>
+        &nbsp;
+        <input type="radio" class="checkitem" value="女性" id="character_w"  aria-describedby="character"/>
+        <label for="character_w">女性</label>
       </dd>
     </dl>
     <h3>連絡先</h3>
@@ -200,7 +207,11 @@
         <label for="name">電話番号</label>
         &nbsp;<span class="ex_essential">[必須]</span></dt>
       <dd>
-        <input type="text" id="name" name="name" placeholder="山田　太郎" value="" autofocus required />
+        <input type="text" id="name" name="name" placeholder="06" value="" autofocus required />
+        -
+        <input type="text" id="name" name="name" placeholder="0000" value="" autofocus required />
+        -
+        <input type="text" id="name" name="name" placeholder="0000" value="" autofocus required />
       </dd>
     </dl>
     <dl>
@@ -208,16 +219,18 @@
         <label for="name">メールアドレス</label>
         &nbsp;<span class="ex_essential">[必須]</span></dt>
       <dd>
-        <input type="text" id="name" name="name" placeholder="山田　太郎" value="" autofocus required />
-      </dd>
+        <input type="text" id="name" name="name" placeholder="aaa@example.com" value="" autofocus required />
+        メールアドレスは<br />
+        半角6文字以上で入力してください<br />
+        半角英数で入力してください。</dd>
     </dl>
     <dl>
       <dt>
         <label for="name">メールアドレス確認用</label>
         &nbsp;<span class="ex_essential">[必須]</span></dt>
       <dd>
-        <input type="text" id="name" name="name" placeholder="山田　太郎" value="" autofocus required />
-      </dd>
+        <input type="text" id="name" name="name" placeholder="aaa@example.com" value="" autofocus required />
+        確認のため再度入力してください</dd>
     </dl>
     <p>
       <input type="checkbox" id="privacy" name="" value="利用規約及びポリシーに同意します。" />
