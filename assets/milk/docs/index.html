@@ -17,15 +17,47 @@
     <script src="//css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
     <![endif]-->
-  </head>
+
+        <style>
+
+  #search {
+    width: 318px;
+    height: 30px;
+  }
+  .search-input {
+    float: left;
+    width: 270px;
+    height: 28px;
+    margin: 0 5px 0 0;
+    padding: 0;
+    border: solid 1px #e6e6e6;
+  }
+    .searchsubmit {
+    float: left;
+    width: 38px;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    background-color: #d33382;
+    background-image: url('btn_search.png');
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+  }
+
+</style>
   <body>
 <h1>D2D</h1>
 <div class="mod_search">
-<form action="search.cgi" method="get" id="searchform" >
-<p class="srch submit">
-<input type="text" name="search" id="search" value="" />
-<input type="image" id="search_btn" src="img/search_btn.jpg" alt="検索" />
-</p>
+<form action="" method="get" class="search-form">
+<label for="s">
+<input type="text" class="search-input" value="" name="s" id="s" />
+<input type="submit" class="searchsubmit" value="検索" />
+</label>
 </form>
 <!-- mod_search_end --></div>
 
